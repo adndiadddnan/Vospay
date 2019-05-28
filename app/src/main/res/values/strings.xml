@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Vospay</string>
+    <string-array name="operator">
+        <item>Pilih</item>
+        <item>Telkomsel</item>
+        <item>Three</item>
+        <item>Indosat</item>
+    </string-array>
+    <string-array name="pulsa">
+        <item>Pilih</item>
+        <item>5.000</item>
+        <item>10.0000</item>
+        <item>15.0000</item>
+        <item>20.0000</item>
+        <item>25.0000</item>
+        <item>30.0000</item>
+        <item>50.0000</item>
+
+    </string-array>
+</resources>

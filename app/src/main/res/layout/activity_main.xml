@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+
+    <!--<include-->
+        <!--layout="@layout/view_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"/>-->
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="120dp"
+           android:orientation="vertical"
+           android:background="@color/colorPrimaryDark">
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+
+               android:src="@drawable/vospay"
+               />
+
+       </LinearLayout>
+       <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+           android:layout_marginTop="100dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           app:cardCornerRadius="8dp"
+           app:cardElevation="8dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:gravity="center">
+
+
+               <TextView
+                   android:layout_margin="4dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Selamat Datang Andi Rian"
+                   />
+               <TextView
+                   android:id="@+id/tvSaldo"
+                   android:text="Saldo Anda : Rp. 200.000"
+                   android:layout_margin="4dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   />
+
+
+
+
+           </LinearLayout>
+
+       </android.support.v7.widget.CardView>
+
+   </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_weight="1"
+        android:id="@+id/card_view_pln"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+
+                android:id="@+id/tvPln"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+
+                android:background="@drawable/listrik"
+                 />
+            <TextView
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pem. PLN"
+                />
+            <Button
+                android:id="@+id/btnPln"
+                android:layout_margin="10dp"
+                android:background="@drawable/style_btn"
+                android:layout_width="wrap_content"
+                android:text="Pilih"
+                android:layout_height="30dp" />
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+               android:layout_weight="1"
+                android:id="@+id/card_view_pdam"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvPdam"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+
+                        android:background="@drawable/pdd"
+                        />
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pem. PDAM"
+                        />
+                    <Button
+                        android:id="@+id/btnPdam"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_btn"
+                        android:layout_width="wrap_content"
+                        android:text="Pilih"
+                        android:layout_height="30dp" />
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_weight="1"
+            android:id="@+id/card_view_game"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvVoucher"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+
+                    android:background="@drawable/bpjs"
+                    />
+                <TextView
+                    android:layout_margin="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pem. BPJS"
+                    />
+                <Button
+                    android:id="@+id/btnBpjs"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/style_btn"
+                    android:layout_width="wrap_content"
+                    android:text="Pilih"
+                    android:layout_height="30dp" />
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_weight="1"
+            android:id="@+id/card_view_pulsa"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvPulsa"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+
+                    android:background="@drawable/opp"
+                    />
+                <TextView
+                    android:layout_margin="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pem. PULSA"
+                    />
+
+
+                <Button
+                    android:id="@+id/btnPulsa"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/style_btn"
+                    android:layout_width="wrap_content"
+                    android:text="Pilih"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
