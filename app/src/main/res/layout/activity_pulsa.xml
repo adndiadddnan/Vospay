@@ -12,6 +12,7 @@
         android:background="#f2f2f2">
 
         <include layout="@layout/view_toolbar_pulsa" />
+
         <TextView
 
             android:layout_marginTop="10dp"

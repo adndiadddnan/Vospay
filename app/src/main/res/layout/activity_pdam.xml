@@ -22,7 +22,7 @@
             android:layout_height="wrap_content" />
 
         <EditText
-
+            android:id="@+id/noPdam"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_width="match_parent"
@@ -31,18 +31,20 @@
         <Button
             android:layout_margin="10dp"
 
-
+            android:id="@+id/btnPdam"
             android:text="Check"
             android:background="@drawable/style_btn_check"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <android.support.v7.widget.CardView
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
+            android:id="@+id/cvNoPdam"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -51,21 +53,24 @@
                 android:layout_margin="10dp"
                 >
                 <TextView
+                    android:id="@+id/tvNoPdam"
                     android:layout_marginTop="10dp"
                     android:textSize="20sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="No PDAM : 1013225 "/>
+                    android:text=""/>
 
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
+            android:id="@+id/cvPeriodePdam"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -74,21 +79,24 @@
                 android:layout_margin="10dp"
                 >
                 <TextView
+                    android:id="@+id/tvPeriode"
                     android:layout_marginTop="10dp"
                     android:textSize="20sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Meter Awal : 4589"/>
+                    android:text=""/>
 
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
+            android:id="@+id/cvMa"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -97,21 +105,24 @@
                 android:layout_margin="10dp"
                 >
                 <TextView
+                    android:id="@+id/tvMa"
                     android:layout_marginTop="10dp"
                     android:textSize="20sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Meter Akhir : 4613"/>
+                    android:text=""/>
 
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
+           android:id="@+id/cvMak"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -120,21 +131,24 @@
                 android:layout_margin="10dp"
                 >
                 <TextView
+                    android:id="@+id/tvMak"
                     android:layout_marginTop="10dp"
                     android:textSize="20sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Denda : 7500"/>
+                    android:text=""/>
 
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
+            android:id="@+id/cvDendaPdam"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -143,21 +157,24 @@
                 android:layout_margin="10dp"
                 >
                 <TextView
+                    android:id="@+id/tvDenda"
                     android:layout_marginTop="10dp"
                     android:textSize="20sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tagihan : 18.990"/>
+                    android:text=""/>
 
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
+            android:id="@+id/cvAdminPdam"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -166,21 +183,24 @@
                 android:layout_margin="10dp"
                 >
                 <TextView
+                    android:id="@+id/tvAdmin"
                     android:layout_marginTop="10dp"
                     android:textSize="20sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Admin : 750"/>
+                    android:text=""/>
 
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
+            android:id="@+id/cvTotalPdam"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -189,16 +209,18 @@
                 android:layout_margin="10dp"
                 >
                 <TextView
+                    android:id="@+id/tvTotal"
                     android:layout_marginTop="10dp"
                     android:textSize="20sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Total : 27.240"/>
+                    android:text=""/>
 
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <Button
+            android:visibility="gone"
             android:layout_margin="10dp"
             android:layout_width="100dp"
             android:layout_height="wrap_content"

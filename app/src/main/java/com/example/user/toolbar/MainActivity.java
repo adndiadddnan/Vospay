@@ -66,6 +66,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnBpjs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, BpjsActivity.class));
+            }
+        });
         RequestQueue queue = Volley.newRequestQueue(this);
 
 
